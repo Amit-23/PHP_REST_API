@@ -22,7 +22,7 @@ $sql = "UPDATE mohali SET student_name = '{$name}', age = {$age}, city = '{$city
 
 if($conn->query($sql)){
 
-     echo json_encode(array('message' => 'Data Updated Successfully.','status' => 200));
+     echo json_encode(array('message' => 'Data Updated Successfully.','status' => true));
 }else{
     echo json_encode(array('message' => 'Data not updated.','status' => false));
 }

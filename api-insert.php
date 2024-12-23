@@ -21,7 +21,7 @@ $conn->query($sql);
 
 if($conn->query($sql)){
 
-     echo json_encode(array('message' => 'Data Inserted Successfully.','status' => 200));
+     echo json_encode(array('message' => 'Data Inserted Successfully.','status' => true));
 }else{
     echo json_encode(array('message' => 'Data not inserted.','status' => false));
 }

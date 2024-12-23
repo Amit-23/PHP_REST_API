@@ -4,9 +4,8 @@
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-$data = json_decode(file_get_contents("php://input"),true);
 
-$search_value = $data['search'];
+$search_value = $_GET['search'];
 
 include_once "config.php";
 
